@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title class='tpl-name'></title>
+<link rel="stylesheet" href="main.css" type="text/css">
+<link rel="stylesheet" href="template.css" type="text/css">
+<link rel="icon" type="image/x-icon" href="doge2.ico">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<style>a#tracks { color:#568259; }</style>
+</head>
+
+<body>
+<div class="main">
+  <div class="navigation" w3-include-html="navigation.html"></div>
+  <script>w3.includeHTML();</script> 
+
+  <div class="content">
+    <h1 class='tpl-name'></h1>
+	<h2>Description of Tracks</h2>
+	The following tracks will be featured in 2020 SAT Competition.  
+  <ul>
+  <li><a href='track_main.html' style='font-weight:bold'>Main Track</a> is the track of sequential SAT solvers. We will use 300-600 benchmark problems, the time limit will be 5000 seconds.
+		All solvers participating in the Main track are required to provide certificates in both SAT and UNSAT cases. 
+		For more information about the UNSAT certificates see <a href="certificates.html">this page</a>.
+    <ul>
+      <!--<li>We encourage <a href='track_hack.html' style='font-weight:bold'>Glucose Hack</a> authors to participate in the main track. A prize will be awarded to the best Glucose hack.</li>-->
+      <li>This time, the Application Track will be a <a href='track_crypto.html' style='font-weight:bold'>Crypto Track</a>.</li>
+      <li>If your solver can not produce UNSAT certificates you can still participate in the <a href='track_nolimits.html' style='font-weight:bold'>No Limits Track</a>.</li>
+    </ul>
+  </li>
+  <li><a href='track_incremental.html' style='font-weight:bold'>Incremental Library Track</a> is for incremental SAT solvers.</li>
+  <li>We will also have the <a href='track_parallel.html' style='font-weight:bold'>Parallel Track</a> again.</li>
+  <li>The <a href='track_cloud.html' style='font-weight:bold'>Cloud Track</a> is for massively parallel SAT solvers using up to 1024 cores.</li>
+  </ul>
+	
+	<p>
+		Printing a model in case of a satisfiable instance is required for all tracks. 
+		UNSAT certificates (proofs) are required only in the main tracks.
+	</p>
+	
+	<h2>Execution Environment</h2>
+	<p>
+		The Main track as well as its subtracks will be run on the <a href="https://www.starexec.org/starexec/public/about.jsp">StarExec cluster</a>.
+		The time limit for solving an instance will be 5000 seconds (in each track). 
+		The solvers will be allowed to use up to <s>24GB</s> <span style="color:#568259">128GB</span> of RAM.
+	</p>
+  <p>
+    The Incremental Library Track will be run on computers with 2 x Intel Xeon E5430 2.66 GHz (4-Core) processors and 24GB of RAM.
+  </p>
+
+	<!--<p>The Parallel Track will be run on computers with Dual Socket
+	Xeon E5-2690 v3 (Haswell) : 12 cores per socket (24 cores/node), 2.6 GHz processors and
+	64 GB DDR4-2133 (8 x 8GB dual rank x8 DIMMS) main memory.
+	Hyperthreading is Enabled - 48 threads (logical CPUs) per node.
+
+	Compute nodes lack a local disk, but users have access to a 32 GB /tmp
+	RAM disk to accelerate IO operations. Note that any space taken in
+	/tmp will decrease the total amount of memory available on the node.
+	If 8 GB of data are written to /tmp the maximum memory available for
+	applications and OS on the node will then be 64 GB - 8 GB = 56GB.
+	</p>
+	
+	<h2>Awards</h2>
+  tba.-->
+    
+  </div>
+</div>
+</body>
+</html>

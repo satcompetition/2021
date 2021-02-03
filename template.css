@@ -1,0 +1,15 @@
+.tpl-name::after {
+	content: "SAT Competition 2021"
+}
+
+.tpl-afil::after {
+	content: "24rd International Conference on Theory and Applications of Satisfiability Testing"
+}
+
+.tpl-afil-place::after {
+	content: "5th - 9th of July 2021 in Barcelona, Spain"
+}
+
+.tpl-afil-short::after {
+	content: "SAT Conference 2021"
+}

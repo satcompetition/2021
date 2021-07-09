@@ -1,0 +1,538 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+\usetheme{CambridgeUS}
+
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{pgf}
+\usepackage{import}
+
+\usepackage{xcolor}
+
+\definecolor{blue}{HTML}{264653}
+\definecolor{green}{HTML}{2a9d8f}
+\definecolor{yellow}{HTML}{e9c46a}
+\definecolor{orange}{HTML}{f4a261}
+\definecolor{red}{HTML}{e76f51}
+
+\setbeamercolor{normal text}{fg=blue,bg=yellow!10}
+\setbeamercolor{alerted text}{fg=blue,bg=orange}
+\setbeamercolor{example text}{fg=blue,bg=red}
+
+\setbeamercolor{background canvas}{fg=black,bg=white}
+\setbeamercolor{background}{fg=black,bg=white}
+
+\setbeamercolor{palette primary}{fg=blue, bg=orange}
+\setbeamercolor{palette secondary}{fg=blue, bg=yellow}
+\setbeamercolor{palette tertiary}{fg=blue, bg=red}
+
+\setbeamercolor{block title}{fg=blue,bg=yellow}
+\setbeamertemplate{itemize item}{\color{red}$\blacksquare$}
+\setbeamertemplate{itemize subitem}{\color{orange}$\blacktriangleright$}
+
+\setbeamercolor{frametitle}{fg=blue,bg=yellow!40}
+\setbeamercolor{title}{fg=blue,bg=yellow!40}
+
+%----------------------------------------------------------------------------------------
+%   TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[SAT Competition 2021]{The Results of SAT Competition 2021}
+
+\author[Balyo, Froleyks, Heule, Iser, J\"{a}rvisalo, Suda] {Tom{\'a}{\v s} Balyo, Nils Froleyks, Marijn Heule,\\
+{\bf Markus Iser}, Matti J\"{a}rvisalo, and Martin Suda}
+\institute[] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+SAT 2021 Conference, Barcelona (Spain), +Cyberspace \\ % Your institution for the title page
+}
+\date{July 9, 2021} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}{SAT Solver Competitions}
+
+{\bf Goals}
+\begin{itemize}
+\item Compilation of new challenging benchmarks
+\item Promotion of SAT solvers and their development
+\item Evaluation of current state-of-the-art solvers (``snapshot'')
+\end{itemize}
+
+\bigskip
+
+{\bf Long tradition}, starting from 1992
+\begin{itemize}
+\item 3 competitions in the 90s\hfill (1992,1993, 1996)
+\item 14 SAT Competitions \hfill (2002--)
+\item 5 SAT Races \hfill (2006, 2008, 2010, 2015, 2019)
+\item 1 SAT Challenge \hfill (2012)
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Key rules}
+
+\begin{itemize}
+\item Certified results of unsatisfiability using DRAT proof logging
+  \begin{itemize}
+  \item Instance is ``not solved'' if proof checker finds inconsistency in proof
+  \end{itemize}
+\medskip
+\item Disqualification of buggy solvers
+  \begin{itemize}
+  \item Producing an incorrect model
+  \item Report UNSAT on a known satisfiable instance
+  \end{itemize}
+\medskip
+\item Mandatory solver descriptions + open source
+\medskip
+\item Ranking scheme: PAR-2
+\begin{itemize}
+\item Favors solvers that are faster (not only count solved instances)
+\end{itemize}
+\medskip
+\item BYOB (Bring Your Own Benchmarks)
+\begin{itemize}
+\item At most 20 instances per participant are used
+\end{itemize} 
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{What is New This Year}
+
+%\begin{minipage}{.7\textwidth}
+\begin{block}{Crypto Track}
+  \begin{itemize}
+  \item Second Instantiation of \emph{Application Track}
+  \item Introduced in SAT Competition 2020 (Planning Track)
+  \item Application Tracks are evaluated on an extra set of instances stemming from a single application domain
+  \end{itemize}
+\end{block}
+
+\begin{block}{Special Innovation Price in Main Track}
+  \begin{itemize}
+  \item Solver won \emph{no price} in Main, Crypto, SAT or UNSAT Track 
+  \item Solver is part of the best performing $k$-Portfolio
+  \item Portfolio of size $k$ with lowest PAR-2 score of its VBS
+  \item Determined smallest $k$ to find such a solver
+  \end{itemize}
+\end{block}
+%\end{minipage}
+%\begin{minipage}{.28\textwidth}
+%\centering
+%\includegraphics[width=.9\textwidth]{img/AWSlogo}
+%\end{minipage}
+
+%\medskip
+%\begin{itemize}
+%  \item New formally-verified checker
+%  \begin{itemize}
+%	\item {\bf cake\_lpr\_array} by Yong Kiam Tan: very easy to install
+%	\item available at: \url{https://github.com/tanyongkiam/cake_lpr}
+%  \end{itemize}
+%\end{itemize}
+\end{frame}
+
+\begin{frame}{Benchmark Instance Selection I}
+
+\begin{block}{Submissions}
+\begin{itemize}
+\item $1091$ instance submitted
+\item $952$ after ``hardness'' filter (solved by Minisat within one minute)
+	\begin{itemize}
+	\item $352$ instances for Main Track
+	\item $600$ instances for Crypto Track
+	\end{itemize}
+\end{itemize}
+\end{block}
+
+\visible<2>{
+\begin{block}{Main Selection: $400$ instances}
+$139$ SAT, $139$ UNSAT, $122$ UNKNOWN
+\begin{itemize}
+\item $300$ new instances (24 instance families)
+	\begin{itemize}
+	\item $13$ instances per author (incl. unused from 2020)
+	\item 104 SAT, 74 UNSAT, 122 UKNOWN
+	\end{itemize}
+\item $100$ old instances (30 instance families)
+	\begin{itemize}
+	\item $35$ SAT, $65$ UNSAT
+	\end{itemize}
+\end{itemize}
+\end{block}
+}
+\end{frame}
+
+\begin{frame}{Benchmark Instance Selection II}
+
+\begin{block}{Submissions}
+\begin{itemize}
+\item $1091$ instance submitted
+\item $952$ after ``hardness'' filter (solved by Minisat within one minute)
+	\begin{itemize}
+	\item $352$ instances for Main Track
+	\item $600$ instances for Crypto Track
+	\end{itemize}
+\end{itemize}
+\end{block}
+
+\visible<2>{
+\begin{block}{Crypto Selection: $200$ instances}
+$151$ SAT, $11$ UNSAT, $38$ UNKNOWN
+\begin{itemize}
+\item $115$ new instances ($3$ authors)
+\item $85$ old instances ($14$ authors)
+\end{itemize}
+\end{block}
+}
+\end{frame}
+
+
+\begin{frame}{Tracks part 1}
+\begin{itemize}
+\item Main (Sequential) Track (48 solvers)
+\begin{itemize}
+\item 400 benchmarks, a combination of ``application" and ``crafted"
+\item 5,000 sec limit for solving and 40,000 sec for proof checking
+\item Solvers run on a single core
+\item UNSAT proof logging required
+\end{itemize}
+\pause
+\medskip
+\item Parallel Track (10 solvers)
+\begin{itemize}
+\item The same 400 benchmarks from Main track
+\item 5,000 sec limit for solving
+\item 1 AWS m4.16xlarge: 64 virtual CPU cores, 256GB RAM
+\end{itemize}
+\pause
+\medskip
+\item Cloud Track (6 solvers)
+\begin{itemize}
+\item The same 400 benchmarks from Main track
+\item 1,000 sec limit for solving
+\item 100 AWS m4.4xlarge: total of 1600 virtual CPU cores
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Tracks part 2}
+\begin{itemize}
+\item CaDiCaL Hack Track (5 solvers)
+\begin{itemize}
+\item 400 benchmarks, a combination of ``application" and ``crafted"
+\item 5,000 sec limit for solving and 40,000 sec for proof checking
+\item Solvers run on a single core
+\item UNSAT proof logging required
+\end{itemize}
+\pause
+\medskip
+\item Crypto Track (48 solvers)
+\begin{itemize}
+\item 200 benchmarks, all coming from cryptographic problems
+\item 5,000 sec limit for solving
+\end{itemize}
+\pause
+\medskip
+\item No-Limit Track (52 solvers, superset of Main track participants)
+\begin{itemize}
+\item 300 brand new benchmarks (subset of the Main Track benchmarks)
+\item 5,000 sec limit for solving
+\item Most of the solvers provided source codes and models, but not all
+\item No awards: top solvers were open source and proof producing
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Parallel Track SAT -- Results}
+The Top 3 solvers of the Parallel Track SAT are:
+\begin{enumerate}
+\item[1]<4-> {\bf PaKis} (PAR-2: 1758, 155 solved)\\
+by Rodrigue Konan Tchinda and Clémentin Tayou Djamegni
+\item[2]<3-> {\bf Merge-Hordesat-Parallel} (PAR-2: 1977, 153 solved)\\
+by Norbert Manthey
+\item[3]<2-> {\bf Mallob-Parallel} (PAR-2: 2084, 151 solved)\\
+by Dominik Schreiber
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Parallel Track SAT -- Plot}
+\centering
+\resizebox{.9\textwidth}{!}{%
+\import{plots/}{parallel.sat.pgf}
+}
+\end{frame}
+
+
+\begin{frame}{Parallel Track UNSAT -- Results}
+The Top 3 solvers of the Parallel Track UNSAT are:
+\begin{itemize}
+
+\item[1]<4-> {\bf P-MCOMSPS} (PAR-2: 829, 173 solved)\\
+by Vincent Vallade, Ludovic Le Frioux, Razvan Oanea, Souheib Baarir, \\~~Julien Sopena, Fabrice Kordon, Saeed Nejati, and Vijay Ganesh
+\item[2]<3-> {\bf Mallob-Parallel} (PAR-2: 1088, 167 solved)\\
+by Dominik Schreiber
+\item[3]<2-> {\bf P-MCOMSPS-STR-32-SC} (PAR-2 1274, 164 solved)\\
+by Zhihui Li, Guanfeng Wu, Yang Xu, and Huimin Fu
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Parallel Track UNSAT -- Plot}
+\centering
+\resizebox{.9\textwidth}{!}{%
+\input{plots/parallel.unsat.pgf}
+}
+\end{frame}
+
+\begin{frame}{Parallel Track ALL -- Results}
+The Top 3 solvers of the Parallel Track ALL are:
+\begin{itemize}
+\item[1]<4-> {\bf P-MCOMSPS} (PAR-2: 2386, 320 solved)\\
+by Vincent Vallade, Ludovic Le Frioux, Razvan Oanea, Souheib Baarir, \\~~Julien Sopena, Fabrice Kordon, Saeed Nejati, and Vijay Ganesh
+\item[2]<3-> {\bf Mallob-Parallel} (PAR-2: 2411, 318 solved)\\
+by Dominik Schreiber
+\item[3]<2-> {\bf PaKis} (PAR-2: 2465, 316 solved)\\
+by Rodrigue Konan Tchinda and Clémentin Tayou Djamegni
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Parallel Track ALL -- Plot}
+\centering
+\resizebox{.9\textwidth}{!}{%
+\input{plots/parallel.pgf}
+}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Cloud Track -- Results}
+
+The Top 3 solvers of the Cloud Track are:
+\begin{itemize}
+
+\item[1]<4-> {\bf Mallob} (PAR-2: 2160, 316 solved)\\
+by Dominik Schreiber
+\item[2]<3-> {\bf Merge-Hordesat} (PAR-2: 3466, 269 solved)\\
+by Norbert Manthey
+\item[3]<2-> {\bf PMCOMSPS-MPI} (PAR-2: 3900, 254 solved)\\
+by Vincent Vallade, Ludovic Le Frioux, Razvan Oanea, Souheib Baarir, \\~~Julien Sopena, Fabrice Kordon, Saeed Nejati, and Vijay Ganesh
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Cloud Track -- Plot}
+\centering
+\resizebox{.9\textwidth}{!}{%
+\input{plots/cloud.pgf}
+}
+\end{frame}
+
+
+\begin{frame}{Results of CaDiCaL Hack Track}
+\begin{block}{Winner of CaDiCaL Hack Track}
+\begin{itemize}
+\item<2> CaDiCaL watch\_sat 
+\item<2> Author: Norbert Manthey
+\item<2> PAR-2: 3613 (Solved: 283)
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+\begin{frame}{Crypto Track -- Results}
+The Top 3 solvers of the Crypto Track are:
+\begin{itemize}
+\item[1]<4->{\bf SLIME\_no\_hess\_no\_rnd} (PAR-2: 3792, 135 solved)\\
+by Oscar Riveros
+\item[2]<3-> {\bf Relaxed\_LCMDCBDL\_SCAVEL01} (PAR-2: 3896, 130 solved)\\
+by Zhihui Li, Guanfeng Wu, Yang Xu, and Huimin Fu
+\item[3]<2-> {\bf Relaxed\_LCFTP\_V2} (PAR-2: 4119, 125 solved)\\
+by Shunyang Bi, Zhang Qu, Hailong You, \\~~Meihua Liu, Pengfei Li, and Yang Zhang
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Crypto Track -- Plot}
+\centering
+\resizebox{.9\textwidth}{!}{%
+\import{plots/}{crypto.pgf}
+}
+\end{frame}
+
+
+\begin{frame}{Main Track SAT -- Results}
+The Top 3 solvers of the Main Track SAT are:
+\begin{itemize}
+\item[1]<4-> {\bf Kissat\_MAB} (PAR-2: 2222, 148 solved)\\
+by Mohamed Sami Cherif, Djamal Habet and Cyril Terrioux
+\item[2]<3-> {\bf lstech\_maple}  (PAR-2: 2358, 144 solved)\\
+by Xindi Zhang, Shaowei Cai, and Zhihan Chen
+\item[3]<2-> {\bf kissat\_gb} (PAR-2: 2430, 143 solved)\\
+by Md Solimul Chowdhury, Martin Müller and Jia-Huai You
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Main Track SAT -- Top 10 Plot}
+\centering
+\resizebox{.9\textwidth}{!}{%
+\input{plots/main.sat.pgf}
+}
+\end{frame}
+
+\begin{frame}{Main Track UNSAT -- Results}
+The Top 3 solvers of the Main Track UNSAT are:
+\begin{itemize}
+\item[1]<4-> 
+{\bf hKis\_unsat}  (PAR-2: 1543, 153 solved)\\
+by Rodrigue Konan Tchinda and Clémentin Tayou Djamegni
+\item[2]<3-> {\bf kissat\_bonus} (PAR-2: 1552, 152 solved)\\
+by Xindi Zhang, Shaowei Cai, and Zhihan Chen
+\item[3]<2-> {\bf Kissat\_sc2021\_sweep} (PAR-2: 1697, 151 solved)  \\
+by Armin Biere
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Main Track UNSAT -- Top 10 Plot}
+\centering
+\resizebox{.9\textwidth}{!}{%
+\input{plots/main.unsat.pgf}
+}
+\end{frame}
+
+\begin{frame}{Main Track ALL -- Results}
+The Top 3 solvers of the Main Track ALL are:
+\begin{itemize}
+\item[1]<4-> {\bf Kissat\_MAB} (PAR-2: 3194, 296 solved)\\
+by Mohamed Sami Cherif, Djamal Habet and Cyril Terrioux
+\item[2]<3-> {\bf Kissat\_sc2021\_sweep} (PAR-2: 3365, 288 solved)  \\
+by Armin Biere
+\item[3]<2-> {\bf kissat\_gb} (PAR-2: 3366, 289 solved)\\
+by Md Solimul Chowdhury, Martin Müller and Jia-Huai You
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Main Track ALL-- Top 10 Plot}
+\centering
+\resizebox{.9\textwidth}{!}{%
+\input{plots/main.pgf}
+}
+\end{frame}
+
+
+\begin{frame}{Special Innovation Price}
+
+\begin{block}{Winner of the Special Innovation Price}
+\visible<2->{\textbf{CaDiCaL\_PriPro}, Benjamin Kaiser and Robert Clausecker}
+\end{block}
+
+\visible<3->{
+\begin{block}{Best k-Portfolios by PAR-2 Score of their VBS}
+\centering
+\begin{tabular}{llc}
+\bf k & \bf Portfolio & \bf PAR-2 \\
+\hline
+1 & \{Kissat\_MAB\} & 3194\\
+2 & \{\textbf{CaDiCaL\_PriPro}, lstech\_maple\} & 2679\\
+3 & \{\textbf{CaDiCaL\_PriPro}, lstech\_maple, Kissat\_sc2021\_sweep\} & 2471\\
+4 & \{Kissat\_sc2021\_sweep, lstech\_maple, hKis, hCaD\_psids\} & 2374\\
+ & \dots & \\
+n & VBS & 2152
+\end{tabular}
+\end{block}
+}
+\end{frame}
+
+
+\begin{frame}{Honorable Mentions I}
+
+\begin{block}{Crypto (NoLimits)}
+\textbf{Maple\_MBDR\_BJL6\_Tier2} by Sima Jamali and David Mitchel
+\begin{itemize}
+\item No Award to failing proofs
+\item PAR-2 Score of 3830 in NoLimits Evaluation (Second Place)
+\end{itemize}
+\end{block}
+
+\begin{block}{Crypto (Cadical Hack)}
+\textbf{CaDiCaL\_rp} by Xindi Zhang, Shaowei Cai, and Zhihan Chen
+\begin{itemize}
+\item PAR-2 Score of 4390 in Crypto Track (Best Hack)
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+
+\begin{frame}{Honorable Mentions II}
+\begin{itemize}
+\item {\bf Mallob HC} (PAR-2: 1633, 337 solved) by Dominik Schreiber
+\item Winner: {\bf Mallob} (PAR-2: 2160, 316 solved)
+\end{itemize}
+\centering
+\resizebox{.8\textwidth}{!}{%
+\import{plots/}{cloudplus.pgf}
+}
+\end{frame}
+
+
+\begin{frame}{More information and Acknowledgments}
+Additionals Information
+\begin{itemize}
+	\item The Competition Proceedings (solver and benchmark descriptions)
+	 will soon be available at https://satcompetition.github.io/2021/
+	\item For the detailed competition results see the SAT Competition website
+\end{itemize}
+\medskip
+
+Acknowledgments
+\begin{itemize}
+\item Thanks to all the participants
+\item Thanks for all the benchmarks
+\item Thanks to Mike Whalen, Jonathan Eidelman,\\and Frankie Botero at AWS
+\item Thanks to Aaron Stump and StarExec
+\item Thanks to CAS Software Karlsruhe for the medals
+\end{itemize}
+\begin{itemize}
+\item Thank You for Your attention
+\end{itemize}
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

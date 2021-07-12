@@ -2,7 +2,7 @@ hash,filename,mergehordesat,mallobhc,mallob,slime,pmcompspsmpi,pmcomspscommpi,pa
 000a41cdca43be89ed62ea3abf2d0b64,snw_13_9_pre.cnf.xz,28.61,144.05,6.33,37.67,13.81,18.11,45.81
 0041051c73dcdd885d412a38e8b09fba,rphp4_065_shuffled.cnf.xz,94.91,60.22,11.34,timeout,84.76,77.23,memout
 004b0f451f7d96f6a572e9e76360f51a,spg_420_280.cnf.xz,94.88,93.52,21.83,59.34,78.11,74.97,169.29
-0107f34364dfff8ab062193b2c71b4de,sp4-33-bin-nons-flat-noid.cnf.xz,sp4-33-bin-stri-flat-noid.cnf.xz,369.44,6.79,9.15,108.99,40.61,35.18,142.30
+0107f34364dfff8ab062193b2c71b4de,sp4-33-bin-nons-flat-noid.cnf.xz,369.44,6.79,9.15,108.99,40.61,35.18,142.30
 01135f7a79d555bd0406f00fac22cbe2,SC21_Timetable_C_140_E_29_Cl_10_S_15.cnf.xz,timeout,19.95,timeout,timeout,timeout,timeout,timeout
 02223564bd2f5c20768e63cf28c785e3,mp1-squ_ali_s10x10_c39_abio_SAT.cnf.xz,20.85,20.33,3.10,12.57,memout,4.14,32.49
 02404a08ea36dd43362bbddc578c839d,ctl_4201_555_unsat.cnf.xz,497.67,51.38,29.52,1111.41,176.73,172.72,memout
@@ -41,7 +41,7 @@ hash,filename,mergehordesat,mallobhc,mallob,slime,pmcompspsmpi,pmcomspscommpi,pa
 198f94ece5fdc9536a28afc3063bdcf6,quad_res_r29_m32.cnf.xz,970.64,timeout,timeout,781.54,timeout,timeout,memout
 1a3254cb7b54789fdd4d56bfaaa38df7,satch2ways18wu.cnf.xz,timeout,2.08,memout,timeout,timeout,timeout,timeout
 1a3320d3cf32f211b3e7b875745713e2,sokoban-p20.sas.cr.21.cnf.xz,148.91,293.58,18.12,365.17,86.94,98.09,394.47
-1a3400dc32a3859afb20566a4ded9606,ACG-15-10p1.cnf.xz,g2-ACG-15-10p1.cnf.xz,162.22,139.00,35.68,245.16,85.19,97.39,446.84
+1a3400dc32a3859afb20566a4ded9606,ACG-15-10p1.cnf.xz,162.22,139.00,35.68,245.16,85.19,97.39,446.84
 1b8c45c42a818db8f62bcbfd6f52c881,sp5-21-15-bin-stri-tree-noid.cnf.xz,29.31,1.89,9.79,26.02,34.22,14.09,56.93
 1bb9929010e0c209f1e59dedba54d9ad,edit_distance023_282.cnf.xz,607.09,timeout,74.89,221.31,298.94,248.01,979.54
 1c35c510ad106bfcdbc76ff49e710ce6,ER_500_40_2.apx_0.cnf.xz,147.09,40.61,7.10,163.32,memout,27.26,memout
@@ -218,7 +218,7 @@ hash,filename,mergehordesat,mallobhc,mallob,slime,pmcompspsmpi,pmcomspscommpi,pa
 86173292a2c6a506acf27a81db853bb5,ktf_TF-7.tf_3_0.06_113.cnf.xz,56.79,2.15,5.14,8.18,15.83,19.10,13.46
 86f1d4b3e7609f8a9ce8ac2a0a7aaa96,size_5_5_5_i223_r12.cnf.xz,80.85,15.91,45.21,50.63,206.72,201.69,54.71
 872d022f6406e00933b831ffd05e26a0,b2005-p4-12x12c10h7-Ser3-0.cnf.xz,timeout,8.31,memout,timeout,timeout,timeout,timeout
-872eecaa7109fe1e31a510c903e9f877,ak128paralparalisc.cnf.xz,g2-ak128paralparalisc.cnf.xz,584.54,7.89,374.34,timeout,1138.56,timeout,timeout
+872eecaa7109fe1e31a510c903e9f877,ak128paralparalisc.cnf.xz,584.54,7.89,374.34,timeout,1138.56,timeout,timeout
 8833e4051c5a45aa3d704469f9f20908,MVD_ADS_S10_6_6.cnf.xz,9.36,timeout,2.43,338.06,2048.84,timeout,1.88
 887e8caf9138890d880c6f7f70474994,at-least-two-sokoban-sequential-p145-microban-sequential.030-NOTKNOWN.cnf.xz,117.13,5.99,25.02,501.50,55.58,memout,527.75
 889f6aa7fd1664a350683f3de5f6a647,sp5-21-15-bin-stri-flat-noid.cnf.xz,31.82,27.50,4.72,8.83,4.63,3.33,memout
@@ -249,12 +249,12 @@ hash,filename,mergehordesat,mallobhc,mallob,slime,pmcompspsmpi,pmcomspscommpi,pa
 9a296539e33398c9ae36663371a63b39,randomG-Mix-n17-d05.cnf.xz,timeout,timeout,54.17,timeout,280.66,281.54,timeout
 9a910a91c04c8626904f860e09aa74a3,mp1-klieber2017s-2000-022-eq.cnf.xz,97.48,2.10,33.13,755.71,574.22,756.51,memout
 9b81119141db098dd4bfb24a1d244e68,Kakuro-easy-051-ext.xml.hg_4.cnf.xz,809.78,5.23,196.50,719.70,579.69,781.08,1212.95
-9bd299393602718a39efb1dd62fbe1a3,UR-20-5p1.cnf.xz,g2-UR-20-5p1.cnf.xz,164.70,7.50,38.99,197.39,121.90,130.42,587.54
+9bd299393602718a39efb1dd62fbe1a3,UR-20-5p1.cnf.xz,164.70,7.50,38.99,197.39,121.90,130.42,587.54
 9c2e734d6c0faeef8a89aa84436fc42d,satch2ways19u.cnf.xz,timeout,2.27,memout,timeout,timeout,timeout,timeout
 9c4892c9ac4e9f5d83d33b5210e7af4e,MVD_ADS_S6_6_5.cnf.xz,7.63,15.52,1.89,75.46,275.67,254.68,0.54
 9ccbe08418189ca1e7ee284564359d4d,LABS_n089_goal008.cnf.xz,370.61,timeout,192.91,283.75,99.69,207.80,103.35
 9da32436de386f3b4f8e6ec1db552349,HCP-529-420.cnf.xz,190.14,37.57,98.02,88.46,249.22,memout,75.33
-9dd246543ae101f829b5cfc226473675,vlsat2_29736_3780419.dimacs.cnf.xz,vlsat2_297_3780.cnf.xz,88.69,213.55,3.82,53.30,timeout,timeout,390.14
+9dd246543ae101f829b5cfc226473675,vlsat2_29736_3780419.dimacs.cnf.xz,88.69,213.55,3.82,53.30,timeout,timeout,390.14
 9e35558ea8ffba630cd8c8f90e14af14,string_compare_safety_cbmc_unwinding_730.cnf.xz,memout,timeout,152.22,memout,memout,memout,990.85
 9e469bffc3f862d6321d84a4ef83969c,edit_distance019_312.cnf.xz,timeout,158.29,timeout,269.64,timeout,timeout,1314.69
 9ea8deb8313d93e60743638909f37d6c,Circuit_multiplier29.cnf.xz,730.41,58.59,85.39,203.82,180.60,203.60,794.37
@@ -286,7 +286,7 @@ ac3e3bb744e258282990aa4307c08cb8,E00X23.cnf.xz,442.33,129.47,164.10,memout,timeo
 ac6256657058fe65dc7ddaf773ab83bf,SC21_Timetable_C_527_E_71_Cl_35_S_35.cnf.xz,352.60,208.92,160.79,155.75,114.53,137.49,181.99
 ac909ca2e27006f71389b6afa605f4be,randomG-B-Mix-n19-d05.cnf.xz,timeout,2.31,memout,memout,timeout,timeout,timeout
 ae172b720ce980b1ec5337bfd7d5a8ff,LABS_n072_goal006.cnf.xz,348.10,17.93,64.65,221.61,44.20,20.23,160.44
-ae17bcd042e6140aa72a2cd9f4c42b9c,vlsat2_37758_5364539.dimacs.cnf.xz,vlsat2_377_5364.cnf.xz,125.47,2.31,5.68,169.28,3576.97,timeout,timeout
+ae17bcd042e6140aa72a2cd9f4c42b9c,vlsat2_37758_5364539.dimacs.cnf.xz,125.47,2.31,5.68,169.28,3576.97,timeout,timeout
 af0b8f58d67dcf639232ac978defe6e3,sted1_0x1e3-393.cnf.xz,940.93,21.28,46.43,60.47,635.96,673.61,memout
 afaee41956622725cf3bb98db6ff9bbb,SC21_Timetable_C_241_E_34_Cl_16_S_13.cnf.xz,memout,timeout,memout,timeout,timeout,timeout,timeout
 b023ea0eb9adbd9182c01d7e2d443289,mp1-tri_ali_s11_c35_bail_UNS.cnf.xz,45.98,48.20,7.94,95.69,28.72,24.25,138.48
@@ -310,7 +310,7 @@ bcc62a99a3251d2ffbab83d65f8252a5,crafted_n12_d6_c3_num28.cnf.xz,396.45,158.43,24
 bd294be907fd8ca6cbc3f4648bfdc6cd,MVD_ADS_S9_6_6.cnf.xz,9.87,18.12,3.21,716.17,timeout,timeout,2.71
 bd9c3ce8c75df3a94eda414514ac5b3a,php14e14.cnf.xz,timeout,101.44,timeout,memout,timeout,timeout,timeout
 bdc4dfc5ebf0274dcb18dd236773fcfa,sum_of_3_cubes_94_bits_30.cnf.xz,timeout,23.50,memout,timeout,timeout,timeout,timeout
-be6bce96bab9cec47b58b6c68c9a1c89,9dlx_vliw_at_b_iq8.cnf.xz,9dlx_vliw_at_b_iq8.used-as.sat04-718.cnf.xz,timeout,39.78,100.31,timeout,885.68,memout,885.49
+be6bce96bab9cec47b58b6c68c9a1c89,9dlx_vliw_at_b_iq8.cnf.xz,timeout,39.78,100.31,timeout,885.68,memout,885.49
 be6c656f34ba9ada4bb10a2182a6fa88,vlsat2_142_6781.cnf.xz,memout,22.52,timeout,timeout,4348.57,timeout,timeout
 bf423e868f17d482233adb880abfb92a,sp5-26-19-bin-stri-flat-noid.cnf.xz,67.91,11.84,8.72,84.56,19.88,180.77,memout
 bf86868ef6662a4984e5d5504b01193e,string_compare_safety_cbmc_unwinding_930.cnf.xz,memout,196.05,222.90,timeout,memout,memout,memout
@@ -319,12 +319,12 @@ c08b00ee4667b900f38c60ea521be6e7,ktf_TF-3.tf_4_0.04_48.cnf.xz,timeout,81.79,time
 c0c075a8f79bc59293c30651afc71b33,edit_distance025_449.cnf.xz,830.86,6.92,501.57,262.64,timeout,timeout,memout
 c1484d43c95d76184dbe50ac5fc98854,satch2ways17w.cnf.xz,timeout,14.12,timeout,memout,timeout,timeout,memout
 c1c25b65adbd9fdde56cd489ab557e71,spg_300_312.cnf.xz,108.06,60.77,76.89,56.45,92.71,104.31,494.58
-c3d8096db125f4bade48cfd0dcf441f3,SE_PR_stb_531_83.apx_1.cnf.xz,stb_531_83.apx_1.cnf.xz,64.41,17.44,2.89,1.21,97.35,4.76,36.61
+c3d8096db125f4bade48cfd0dcf441f3,SE_PR_stb_531_83.apx_1.cnf.xz,64.41,17.44,2.89,1.21,97.35,4.76,36.61
 c401fc09cf0d3fb666cd80dd38f9757d,Mycielski-11-hints-1.cnf.xz,289.71,184.87,74.91,416.98,541.82,529.18,491.69
 c41c74f316a2067cc19708ce982d960a,WS_400_16_90_70.apx_0.cnf.xz,112.18,timeout,8.31,150.14,57.87,59.08,memout
 c502ef60c01f7ce1f3fb241b08253e81,barman-pfile10-039.sas.ex.15.cnf.xz,130.91,13.62,24.40,memout,timeout,timeout,96.85
 c50dd1b0f41a1adcdfed8d663add9428,20-100-lambda100-65_sat.cnf.xz,58.83,17.77,15.35,79.43,57.06,54.03,memout
-c52ad9f8fec393a1f4b421aa14af75d3,at-least-two-vmpc_26.cnf.xz,vmpc_26.cnf.xz,78.90,6.91,17.70,130.15,34.83,37.42,1272.11
+c52ad9f8fec393a1f4b421aa14af75d3,at-least-two-vmpc_26.cnf.xz,78.90,6.91,17.70,130.15,34.83,37.42,1272.11
 c5905895a64fbbfb8a60b18bf77b7054,puzzle60_sat.cnf.xz,timeout,63.79,memout,timeout,timeout,timeout,memout
 c5ae0ec49de0959cd14431ce851c14f8,Circuit_multiplier22.cnf.xz,40.12,2.29,8.30,46.68,21.13,39.26,4.72
 c689bbf889022255138ab00f59a545b1,b2005-p5-14x14c17h9-Ser5-0.cnf.xz,memout,22.74,timeout,timeout,memout,memout,memout
@@ -387,7 +387,7 @@ eda4aa84aeeb306468396fa82a6bba5a,pb_300_05_lb_17.cnf.xz,244.87,31.56,16.30,50.79
 ee3d0bbbe59d1d3d1a087df411d44626,sum_of_3_cubes_87_bits_75.cnf.xz,timeout,10.51,timeout,memout,timeout,timeout,memout
 ef4508038f0220f285640f4f9f1da640,satch2ways18u.cnf.xz,timeout,6.90,memout,timeout,timeout,timeout,timeout
 ef64bc4d3c2505574e067eb50b48ffd4,HCP-522-105.cnf.xz,99.42,5.89,99.27,91.23,526.69,884.71,58.85
-ef673597d33e9c4952ac883ceb96cbab,k2fix_gr_rcs_w8.shuffled.cnf.xz,simon03:sat02bis:k2fix_gr_rcs_w8.used-as.sat04-353.cnf.xz,80.06,51.96,4.88,18.12,17.10,22.94,memout
+ef673597d33e9c4952ac883ceb96cbab,k2fix_gr_rcs_w8.shuffled.cnf.xz,80.06,51.96,4.88,18.12,17.10,22.94,memout
 effa19cc18a6c3faca19761028bb0a0e,SC21_Timetable_C_121_E_34_Cl_8_S_4.cnf.xz,timeout,3.42,timeout,timeout,timeout,timeout,timeout
 f157df1208c06caaa5cf11371704b87b,edit_distance041_182.cnf.xz,78.06,12.31,16.30,168.06,73.42,63.14,271.10
 f293dc11e842227dd1a49fe1571bcb8b,mp1-tri_ali_s11_c35_abix_UNS.cnf.xz,49.50,10.12,11.10,74.98,27.12,26.90,96.23
@@ -397,5 +397,5 @@ f746dae2050dd4aa48bcd53e8bd897b4,ex065_25.cnf.xz,117.78,123.09,142.46,22.49,180.
 fab5698f06861b62c881c77630fbcd4d,Kakuro-easy-142-ext.xml.hg_8.cnf.xz,memout,2.30,memout,329.60,memout,memout,628.97
 faea4b579b0010b32f001ac4b5b9415a,rphp4_090_shuffled.cnf.xz,948.99,58.78,23.54,timeout,272.15,267.01,timeout
 fb621b2b4a54ec0f01ac36daaa7f0f5b,HCP-470-105.cnf.xz,721.00,24.12,114.10,memout,timeout,timeout,649.99
-fdfd5975c57d7cd2264ef6aff6cb4815,SE_PR_stb_588_138.apx_1.cnf.xz,stb_588_138.apx_1.cnf.xz,122.20,8.30,3.52,2.22,160.73,59.78,memout
+fdfd5975c57d7cd2264ef6aff6cb4815,SE_PR_stb_588_138.apx_1.cnf.xz,122.20,8.30,3.52,2.22,160.73,59.78,memout
 ff4b033c2a2da4100f0b1e83c49c5f80,Circuit_multiplier25.cnf.xz,258.92,21.74,33.98,219.49,440.67,85.14,743.29

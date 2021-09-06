@@ -13,14 +13,16 @@ a.active { color:#568259; }
 .main {
   width:100%;
   height:100%;
-  overflow-y:scroll;
+  overflow:hidden;
 }
 
 .navigation {
   padding:10pt;
+  height:100%;
   line-height: 150%;
   float:left;
   position:fixed;
+  overflow-y:auto;
 }
 
 .navigation ul {
@@ -32,12 +34,13 @@ a.active { color:#568259; }
 
 .content {
   padding:15px;
-  min-height:100%;
+  height:100%;
   max-width:1024px;
   min-width:600px;
   margin-left:250px;
   margin-right:250px;
   background:#F1FFFA;
+  overflow-y:auto;
 }
 
 .content ul li {
